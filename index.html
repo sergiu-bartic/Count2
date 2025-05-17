@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vote Counting 2</title>
+  <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <header>
+    <div class="logo-title">
+      <img src="assets/logo.png" alt="Logo" class="logo"/>
+      <h1>Count 2</h1>
+    </div>
+    <div class="menu-toggle" id="menuToggle"><i class="fa-solid fa-bars"></i></div>
+    <nav class="menu" id="mainMenu">
+      <div class="dropdown">
+        <button class="menu-btn">Sort</button>
+        <div class="submenu">
+          <button class="sort-option active" data-sort="position">
+            <i class="fa-solid fa-circle-check icon"></i> Position
+          </button>
+          <button class="sort-option" data-sort="votes">
+            <i class="fa-regular fa-circle icon"></i> Votes
+          </button>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="menu-btn">Select</button>
+        <div class="submenu" id="selectSubmenu"></div>
+      </div>
+      <div>
+        <button class="menu-btn" id="restartBtn">Restart</button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="bodyContainer"></main>
+
+  <div id="confirmationDialog" class="hidden"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
